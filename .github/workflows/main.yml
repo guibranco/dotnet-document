@@ -60,7 +60,7 @@ jobs:
     
     # Upload nupkg to build artifacts
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ${{ env.PACKAGE_ID }}
         path: ${{ env.NUPKG_PATH }}
